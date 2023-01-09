@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font type link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <!-- Monda font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Game | Rolling Dice</title>
+  </head>
+
+  <body>
+    <main class="container-dice">
+      <!-- first part for first player -->
+      <section class="player-0 player-active">
+        <div class="player-0__text">
+          <h1 class="player-name" id="name-0">Player 1</h1>
+          <span class="player-score" id="score-0">85</span>
+        </div>
+        <!-- current score box -->
+        <div class="current-box">
+          <p class="current-box__text">current</p>
+          <span class="current-box__score0">12</span>
+        </div>
+      </section>
+      <!-- controling game part -->
+      <section class="control-game">
+        <button id="new-game" class="btn" type="button">🕹️New Game</button>
+        <img class="dice-img" src="images/dice-1.png" alt="dice">
+        <div class="control-game__plus">
+          <button class="btn" id="rolling" type="button">🎲Rolling Dice</button>
+          <button class="btn-hold btn" id="holding" type="button">🛑Hold</button>
+        </div>
+      </section>
+      <!-- second part for second player -->
+      <section class="player-1">
+        <div class="player-1__text">
+          <h1 class="player-name" id="name-1">Player 2</h1>
+          <span class="player-score" id="score-1">45</span>
+        </div>
+        <!-- current score box -->
+        <div class="current-box">
+          <p class="current-box__text">current</p>
+          <span class="current-box__score1">18</span>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
